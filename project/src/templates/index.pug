@@ -1,19 +1,33 @@
 doctype html  
 html(lang='ru')  
- head
-   title Ultra-F
-   meta(charset='utf-8')
-   meta(property='og:url'content='http://ultra-f.ru')
-   meta(property='og:type'content='website')
-   meta(property='og:title'content='Ультра-Ф | Главная')
-   meta(property='og:description'content='Интернет-магазин немецкой мебельной и отделочной фурнитуры ultra-f.ru. Изготовление мебели под заказ.')
-   meta(property='og:image'content='http://ultra-f.ru/images/logo.png')
-   meta(name='description' content='Интернет-магазин немецкой мебельной и отделочной фурнитуры ultra-f.ru. Изготовление мебели под заказ.')
-   mate(name='keywords' content='мебель, фурнитура')
-   base(href='http://ultra-f.ru/')
-   link(rel='icon' href='http://ultra-f.ru/favicon.ico' type='image/x-icon')
-   link(rel='shortcut icon' href='http://ultra-f.ru/favicon.ico' type='image/x-icon')   
- body
-   h1 Pug Examples
-   div.container
-     p Cool Pug example!
+    head
+        title Ultra-F
+        meta(charset='utf-8')
+        meta(property='og:url'content='http://ultra-f.ru')
+        meta(property='og:type'content='website')
+        meta(property='og:title'content='Ультра-Ф | Главная')
+        meta(property='og:description'content='Интернет-магазин немецкой мебельной и отделочной фурнитуры ultra-f.ru. Изготовление мебели под заказ.')
+        meta(property='og:image'content='http://ultra-f.ru/images/logo.png')
+        meta(name='description' content='Интернет-магазин немецкой мебельной и отделочной фурнитуры ultra-f.ru. Изготовление мебели под заказ.')
+        mate(name='keywords' content='мебель, фурнитура')
+        base(href='http://ultra-f.ru/')
+        link(rel='icon' href='http://ultra-f.ru/favicon.ico' type='image/x-icon')
+        link(rel='shortcut icon' href='http://ultra-f.ru/favicon.ico' type='image/x-icon')   
+    body
+        header.header
+            .logo
+                |UF logo
+            navi.navi
+                ul.list
+                    li.item
+                        a.link(href="#")
+                        .subnavi
+                            ul.list
+                                li.item
+                                    a.link(href="#")
+                .side-content
+                    .phones-area
+                    .short-card-area
+            .header-extra-info
+        .content-wrapper
+        include components/footer.pug
