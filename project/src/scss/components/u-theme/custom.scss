@@ -8,12 +8,45 @@ body {
     flex: 1 0 auto;
   }
   header {
-      .search-extended {
-          input {
-              margin-bottom: 0!important;
-          }
-      }
+      
   }
   .parallax-container {
       height: 300px;
+  }
+  .header {
+    .search-extended {
+        input {
+            margin-bottom: 0!important;
+        }
+    }
+    .card {
+        &.active {
+            background: rgba(255,255,255,.8);
+        }
+        .link {
+            color:blue;
+        }
+    }
+    .input-field input[type=search] {
+        height: 3rem;
+        padding-left: 4rem;
+        width: calc(100% - 4rem);
+        border-bottom-color: transparent;
+        box-shadow: none;
+    }
+    .container {
+        &>.row {
+            margin-bottom: 0;
+        }
+        .col.l10 {
+            .row {
+                margin-bottom: 0;
+            }
+        }
+    }
+  }
+  .input-field input[type=search] ~ .mdi-navigation-close, .input-field input[type=search] ~ .material-icons {
+      font-size: 1.5rem;
+      top:50%;
+      transform: translateY(-50%);
   }

@@ -10254,7 +10254,7 @@ if (Vel) {
   Materialize.Vel = Velocity;
 }
 $('.carousel.carousel-slider').carousel({fullWidth: true});
-$('.carousel.logos').carousel();
+$('.carousel.logos').carousel({dist: 0});
 $('.parallax').parallax();
 autoplay();
 function autoplay() {
