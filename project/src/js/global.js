@@ -181,5 +181,5 @@ $('.parallax').parallax();
 autoplay();
 function autoplay() {
     $('.carousel').carousel('next');
-    setTimeout(autoplay, 7000);
+    setTimeout(autoplay, 12000);
 }
