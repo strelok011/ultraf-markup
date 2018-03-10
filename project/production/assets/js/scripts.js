@@ -10261,3 +10261,5 @@ function autoplay() {
     $('.carousel').carousel('next');
     setTimeout(autoplay, 12000);
 }
+$('.modal').modal();
+$('.dropdown-trigger').dropdown();

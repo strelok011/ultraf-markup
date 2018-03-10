@@ -1,7 +1,5 @@
 .section
     .row
-.section
-    .row
         .carousel.carousel-slider(data-indicators="true")
             .carousel-fixed-item.center
                 a.btn.waves-effect.white.grey-text.darken-text-2.hoverable О компании
@@ -34,13 +32,16 @@
     .container
         .row
             .col.l4.s12
+                span.title Новости
                 .card.hoverable
                     .card-content
                         .card-title Новости
-                        p текст
                     .card-action
                         ul
                             li
+                                .row
+                                    .col.s12
+                                        img(src="http://fakeimg.pl/285x100/")
                                 .row
                                     .col.s12
                                         | 10.02.2018: &nbsp
@@ -51,6 +52,9 @@
                             li
                                 .row
                                     .col.s12
+                                        img(src="http://fakeimg.pl/285x100/")
+                                .row
+                                    .col.s12
                                         | 12.02.2018: &nbsp
                                         strong Пополнение раздела мебельные петли!
                                 .row
@@ -59,16 +63,22 @@
                             li
                                 .row
                                     .col.s12
+                                        img(src="http://fakeimg.pl/285x100/")
+                                .row
+                                    .col.s12
                                         | 14.02.2018: &nbsp
                                         strong Добавлена новая услуга - консультация специалиста!
                                 .row
                                     .col.s6.offset-s6
                                         a.link.right(href="#!") Подробнее
             .col.l4.s12
-                .card.hoverable
-                    .card-content
-                        .card-title Акции и распродажи
-                        p В связи с запуском новых моделей мебельных ручек - большая скидка на остатки на складе
+                span.title Акции и распродажи
+                //- .card.hoverable
+                .card-image.waves-effect.waves-block.waves-light.hoverable
+                    a(href="#")
+                        img(src="http://fakeimg.pl/340x100/", alt="img")
+                        .card-title.home Акция
+                        //- p В связи с запуском новых моделей мебельных ручек - большая скидка на остатки на складе
                     .card-action
                         a.link(href="#!") Подробнее
                 .card.hoverable
@@ -79,7 +89,7 @@
                         a.link(href="#!") Подробнее
                 .card.hoverable
                     .card-content
-                        .card-title Акции и распродажи
+                        .card-title Распродажа
                         p Сезонная скидка на минификсы!
                     .card-action
                         a.link(href="#!") Подробнее
@@ -141,11 +151,11 @@
                                     h5
                                         |Консультация специалиста по всему ассортименту
                                         br
-                                        |Предостовление инстукций по монтажу
+                                        |Инстукции по монтажу
                                         br
                                         |Помощь в проектировании поставленных задач
                                         br
-                                        |Выезд на обьект, замер,
+                                        |Выезд на обьект, замер
 
                                         a.waves-effect.waves-light.btn-floating.secondary-content.hoverable(href="#!")
                                             i.material-icons message
@@ -179,3 +189,49 @@
                     .card.carousel-item
                         a(href="#8!")
                             img.responsive-img(src="assets/images/VV-mini.jpg", alt="")
+.section.blue-grey.darken-2
+    .container
+        .row
+            .col.l12.s12
+                h3.white-text Как нас найти
+        .row
+            .card-panel.blue-grey.hoverable
+                iframe(src="https://yandex.ru/map-widget/v1/-/CBatr4WBHB" width="100%" height="400" frameborder="0")
+.section
+    .container
+        .row
+            .col.l12.s12
+                h3 Остались вопросы?
+        .row
+            .col.l1.s12
+                h5 
+                    a.btn-floating.right.green
+                        i.material-icons question_answer
+            .col.l5.s12
+                h5
+                    | Посмотрите в нашей 
+                    a.link(href="#!") справке по сайту
+            .col.l1.s12
+                h5 
+                    a.btn-floating.right.green
+                        i.material-icons collections
+            .col.l5.s12
+                h5 Загляните в 
+                    a.link(href="#!") полный каталог
+        .row
+            .col.l1.s12
+                h5 
+                    a.btn-floating.waves-effect.waves-light.right.red.darken-3.pulse.hoverable(href="#!")
+                        i.material-icons local_phone
+            .col.l5.s12
+                h5
+                    | Закажите обратный звонок,
+                    br
+                    | и мы обязательно перезвоним!
+            .col.l1.s12
+                h5 
+                    a.btn-floating.right.green
+                        i.material-icons collections
+            .col.l5.s12
+                h5 Рассчитайте навесную панель &nbsp;
+                    a.link(href="#!") в калькуляторе веса

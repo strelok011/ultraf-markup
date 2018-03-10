@@ -12,12 +12,13 @@ header.header
                 .col.l10.s12
                     .row
                         .col.l6.s12
-                            form
-                                .input-field
-                                    input(id="search" type="search" name="search" required)
-                                    label.label-icon(for="search")
-                                        i.material-icons search
-                                    i.material-icons close
+                            //- form
+                            //-     .input-field
+                            //-         input(id="search" type="search" name="search" required)
+                            //-         label.label-icon(for="search")
+                            //-             i.material-icons search
+                            //-             //- | Поиск по сайту
+                            //-         i.material-icons close
                         .col.l3.s12
                             ul.list
                                 li
@@ -38,23 +39,23 @@ header.header
                                         a.link(href="tel:+78003011211") +7 (800) 301-12-11
                     .row
                         .col.l6.s12
-                        .col.l3.s12
-                            ul.list
-                                li
-                                    h6.valign-wrapper
-                                        i.small.material-icons.left.light-blue-text shopping_cart
-                                        a.link(href="mailto:office@ultra-f.ru") 
-                                            strong оформить заказ
+                        //- .col.l3.s12
+                        //-     ul.list
+                        //-         li
+                        //-             h6.valign-wrapper
+                        //-                 i.small.material-icons.left.light-blue-text shopping_cart
+                        //-                 a.link(href="mailto:office@ultra-f.ru") 
+                        //-                     strong оформить заказ
                         
                             
-                        .col.l3.s12
-                            ul.list
-                                li
-                                    h6.valign-wrapper
-                                        a.waves-effect.waves-light.btn-floating.white-text.red.darken-3.pulse.hoverable.left(href="#!")
-                                            i.material-icons.left.white-text local_phone
-                                        |&nbsp; 
-                                        strong &nbsp; заказать звонок
+                        //- .col.l3.s12
+                        //-     ul.list
+                        //-         li
+                        //-             h6.valign-wrapper
+                        //-                 a.waves-effect.waves-light.btn-floating.white-text.red.darken-3.pulse.hoverable.left(href="#!")
+                        //-                     i.material-icons.left.white-text local_phone
+                        //-                 |&nbsp; 
+                        //-                 strong &nbsp; заказать звонок
         nav.nav-content.nav-extended.light-blue.darken-4
             .container
                 .row
@@ -72,8 +73,23 @@ header.header
                         li
                             a.waves-effect.waves-light(href="#!") Отзывы
                         li.right
-                            a.btn.white.link.hoverable(href="/catalog")
+                            //- a.btn.white.link.hoverable(href="/catalog")
                                 img(src="assets/images/logo_haefele_new.gif", alt="Hafele" width="100")
+                            a.waves-effect.waves-light.btn-floating.white-text.red.darken-3.pulse.hoverable(href="#!")
+                                i.material-icons.left.white-text local_phone
+                            a.waves-effect.waves-light.btn-floating.white-text.transparent.hoverable.dropdown-trigger.dropdown-button(href="#card1")
+                                i.material-icons shopping_cart
+                            ul.dropdown-content#card1 
+                                li 
+                                    a(href="#1") one
+                                li 
+                                    a(href="#1") one
+                                li.divider 
+                                li
+                                    a(href="#1") one
+
+                            a.waves-effect.waves-light.btn-floating.white-text.transparent.hoverable.modal-trigger(href="#search1")
+                                i.material-icons search
                 .row
                     ul.tabs.transparent
                         li.tab.white.waves-effect.waves-orange
@@ -277,3 +293,16 @@ header.header
                                             .card-content
                                                 .card-title Пример товара
                                                 p Some text
+    .modal#search1
+        .modal-content
+            h4 Поиск по сайту
+            form
+                .input-field
+                    input(id="search" type="search" name="search" required)
+                    label.label-icon(for="search")
+                        i.material-icons search
+                        //- | Поиск по сайту
+                    i.modal-action.modal-close.material-icons close
+        //- .modal-footer
+            a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href="#!")
+                i.material-icons close
