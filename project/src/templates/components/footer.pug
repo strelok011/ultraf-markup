@@ -73,15 +73,46 @@ footer.page-footer.light-blue.darken-4
                         strong Ultra-F
                 .col.l6.s12
                     .social.right
-                        a.btn-floating.white-text.light-blue.darken-3.right.waves-effect.waves-light.hoverable(href="#!")
+                        a.btn-floating.white-text.light-blue.darken-3.waves-effect.waves-light.hoverable(href="#!")
                             i.ff-icon.icon-vkontakte-rect
-                        |&nbsp;
-                        a.btn-floating.white-text.light-blue.darken-3.right.waves-effect.waves-light(href="#!")
+                        |&nbsp;&nbsp;
+                        a.btn-floating.white-text.light-blue.darken-3.waves-effect.waves-light(href="#!")
                             i.ff-icon.icon-odnoklassniki
-                        |&nbsp;
-                        a.btn-floating.white-text.light-blue.darken-3.right.waves-effect.waves-light(href="#!")
+                        |&nbsp;&nbsp;
+                        a.btn-floating.white-text.light-blue.darken-3.waves-effect.waves-light(href="#!")
                             i.ff-icon.icon-facebook
-                        |&nbsp;
-                        a.btn-floating.white-text.light-blue.darken-3.right.waves-effect.waves-light(href="#!")
-                            i.ff-icon.icon-vimeo
-                        |&nbsp;
+                        |&nbsp;&nbsp;
+                        //- a.btn-floating.white-text.light-blue.darken-3.right.waves-effect.waves-light(href="#!")
+                        //-     i.ff-icon.icon-vimeo
+                        //- |&nbsp;
+    .modal#search1
+        .modal-content
+            h4 Поиск по сайту
+            form
+                .input-field
+                    input(id="search" type="search" name="search" required)
+                    label.label-icon(for="search")
+                        i.material-icons search
+                        //- | Поиск по сайту
+                    i.modal-action.modal-close.material-icons close
+        .modal-footer
+            a.modal-action.modal-close.waves-effect.waves-green.btn-flat.blue.darken-3.white-text(href="#!") Найти
+    .modal#callback
+        a.modal-action.modal-close.waves-effect.waves-green.btn-flat.right(href="#!")
+                i.material-icons close
+        .modal-content
+            h4 Не можете дозвониться?
+            p Оставьте ваш телефон. Наш оператор свяжется с вами в ближайшее время.
+            .row
+                form
+                    .input-field.col.s6
+                        i.material-icons.prefix account_circle
+                        input(id="callname", type="text")
+                        label(for="callname") Имя
+                    .input-field.col.s6
+                        i.material-icons.prefix phone
+                        input(id="callnumber", type="tel")
+                        label(for="callname") Номер телефона
+
+        .modal-footer
+            a.modal-action.modal-close.waves-effect.waves-green.btn-flat.red.darken-3.white-text(href="#!") Заказать звонок

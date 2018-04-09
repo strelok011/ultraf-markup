@@ -13,7 +13,7 @@
                 .container
                     h2 Ценности и принципы компании 
                     p.white-text.flow-text
-                        |Во главу угла всей нашей деятельности поставлен клиент 
+                        |Во главу угла всей нашей деятельности поставлен клиент.
                         br
                         |Мы действуем в интересах наших клиентов и всегда стремимся предоставить наилучшее качество. Мы гарантируем эффективность и выгоду для клиента во всем, что мы делаем. Мы постоянно и повсеместно работаем над поисками идеальных точек соприкосновения. 
 
@@ -221,11 +221,12 @@
         .row
             .col.l1.s12
                 h5 
-                    a.btn-floating.waves-effect.waves-light.right.red.darken-3.pulse.hoverable(href="#!")
+                    a.btn-floating.waves-effect.waves-light.right.red.darken-3.pulse.hoverable.modal-trigger(href="#callback")
                         i.material-icons local_phone
             .col.l5.s12
                 h5
-                    | Закажите обратный звонок,
+                    | Закажите 
+                    a.modal-trigger(href="#callback") обратный звонок,
                     br
                     | и мы обязательно перезвоним!
             .col.l1.s12

@@ -178,10 +178,18 @@ if (Vel) {
 $('.carousel.carousel-slider').carousel({fullWidth: true});
 $('.carousel.logos').carousel({dist: 0});
 $('.parallax').parallax();
-autoplay();
 function autoplay() {
     $('.carousel').carousel('next');
     setTimeout(autoplay, 12000);
 }
+setTimeout(autoplay, 6000);
 $('.modal').modal();
 $('.dropdown-trigger').dropdown();
+$(window).on('scroll', function() {
+  if ($(document).scrollTop() < 44) {
+      $('body').removeClass('is-fixed');
+      // minPageHeight();
+  } else {
+      $('body').addClass('is-fixed');
+  }
+});

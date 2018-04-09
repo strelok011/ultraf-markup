@@ -2,14 +2,35 @@ header.header
     .nav-extended.transparent(role="navigation")
         .container.nav-wrapper
             .row.valign-wrapper
-                .col.l2.s12
-                    .logo
-                        a.link(href="/")
-                            include ../../svg/ultra-logo.svg
+                .col
+                    h6.valign-wrapper.light-blue-text
+                        | РЕЖИМ РАБОТЫ: Будни: 9-00 - 18-00, суббота: 11-00 - 18-00, выходной: воскресенье
+                .col
+                    h6.valign-wrapper
+                        i.small.material-icons.left.light-blue-text contact_mail
+                        a.link(href="mailto:office@ultra-f.ru") office@ultra-f.ru            
+                .col
+                    h6.valign-wrapper
+                        i.small.material-icons.left.light-blue-text contact_phone
+                        a.link(href="tel:+74957902303")
+                            strong +7 (495) 790-23-03
+                .col
+                    h6.valign-wrapper
+                        i.small.material-icons.left.light-blue-text contact_phone
+                        a.link(href="tel:+78003011211") 
+                            strong +7 (800) 301-12-11
+                                
+
+
+
+                //- .col.l2.s12
+                //-     .logo
+                //-         a.link(href="/")
+                //-             include ../../svg/ultra-logo.svg
                                 
                     
                     
-                .col.l10.s12
+                //- .col.l10.s12
                     .row
                         .col.l6.s12
                             //- form
@@ -37,8 +58,8 @@ header.header
                                 li
                                     small
                                         a.link(href="tel:+78003011211") +7 (800) 301-12-11
-                    .row
-                        .col.l6.s12
+                    //- .row
+                    //-     .col.l6.s12
                         //- .col.l3.s12
                         //-     ul.list
                         //-         li
@@ -58,44 +79,255 @@ header.header
                         //-                 strong &nbsp; заказать звонок
         nav.nav-content.nav-extended.light-blue.darken-4
             .container
-                .row
-                    ul.light-blue.darken-4.hide-on-med-and-down(id="nav-mobile").center
-                        li
-                            a.waves-effect.waves-light(href="#!") Главная
-                        li
-                            a.waves-effect.waves-light(href="#!") О компании
-                        li
-                            a.waves-effect.waves-light(href="#!") Новости и обзоры
-                        li
-                            a.waves-effect.waves-light(href="#!") Доставка и оплата
-                        li
-                            a.waves-effect.waves-light(href="#!") Контакты
-                        li
-                            a.waves-effect.waves-light(href="#!") Отзывы
-                        li.right
-                            //- a.btn.white.link.hoverable(href="/catalog")
-                                img(src="assets/images/logo_haefele_new.gif", alt="Hafele" width="100")
-                            a.waves-effect.waves-light.btn-floating.white-text.red.darken-3.pulse.hoverable(href="#!")
-                                i.material-icons.left.white-text local_phone
-                            a.waves-effect.waves-light.btn-floating.white-text.transparent.hoverable.dropdown-trigger.dropdown-button(href="#card1")
-                                i.material-icons shopping_cart
-                            ul.dropdown-content#card1 
-                                li 
-                                    a(href="#1") one
-                                li 
-                                    a(href="#1") one
-                                li.divider 
-                                li
-                                    a(href="#1") one
+                .row.valign-wrapper
+                    .col.l2.s12
+                        .card.scaled.hovered
+                            .logo
+                                a.link(href="/")
+                                    include ../../svg/ultra-logo.svg
+                    .col.l10.s12
+                        ul.light-blue.darken-4.hide-on-med-and-down(id="nav-mobile").center
+                            li
+                                a.waves-effect.waves-light(href="#!") Главная
+                            li
+                                a.waves-effect.waves-light(href="#!") О компании
+                            li
+                                a.waves-effect.waves-light(href="#!") Новости и обзоры
+                            li
+                                a.waves-effect.waves-light(href="#!") Доставка и оплата
+                            li
+                                a.waves-effect.waves-light(href="#!") Контакты
+                            li
+                                a.waves-effect.waves-light(href="#!") Отзывы
+                            li.right
+                                //- a.btn.white.link.hoverable(href="/catalog")
+                                    img(src="assets/images/logo_haefele_new.gif", alt="Hafele" width="100")
+                                a.waves-effect.waves-light.btn-floating.white-text.red.darken-3.pulse.hoverable.modal-trigger(href="#callback" title="Заказать обратный звонок")
+                                    i.material-icons.left.white-text local_phone
+                                a.waves-effect.waves-light.btn-floating.white-text.transparent.hoverable.dropdown-trigger.dropdown-button(href="#card1")
+                                    i.material-icons shopping_cart
+                                ul.dropdown-content#card1 
+                                    li 
+                                        a(href="#1") one
+                                    li 
+                                        a(href="#1") one
+                                    li.divider 
+                                    li
+                                        a(href="#1") one
 
-                            a.waves-effect.waves-light.btn-floating.white-text.transparent.hoverable.modal-trigger(href="#search1")
-                                i.material-icons search
-                .row
-                    ul.tabs.transparent
+                                a.waves-effect.waves-light.btn-floating.white-text.transparent.hoverable.modal-trigger(href="#search1")
+                                    i.tiny.material-icons search
+                .row.m-flex.m-relative
+                    .col.hover-action
+                        a.btn.btn-small.white.waves-effect.waves-orange.blue-text Каталог
+                    .col.hover-action
+                        a.btn.purple.waves-effect.waves-orange.arrw Для мебели
+                        .drop-down
+                            .card#nav2
+                                .card-content.lighten-4
+                                    div
+                                        .row
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Мебельная фурнитура
+                                                        ul.list.browser-default
+                                                            li
+                                                                a.link(href="#!") Some text
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Все виды петель
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Мебельные ручки фасадов
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Направляющие ящиков и шкафов
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Системы открывания мебельных фасадов
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Кухонные аксессуары
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Мебель, предметы интерьера
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.purple-text.flow-text(href="#") Электрика интерьера
+                                                                
+                                            .col.l4.s12
+                                                .card
+                                                    .card-content
+                                                        .card-title Пример товара
+                                                        p Some text
+                    .col.hover-action
+                        a.btn.red.darken-1.waves-effect.waves-orange.arrw Для окон и дверей
+                        .drop-down
+                            .card#nav3
+                                .card-content.lighten-4
+                                    div
+                                        .row
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.red-text.flow-text(href="#") Сантехузел - аксессуары для ванной комнаты
+                                                        ul.list.browser-default
+                                                            li
+                                                                a.link(href="#!") Some text
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.red-text.flow-text(href="#") Приспособления и крепеж для стекла
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.red-text.flow-text(href="#") Кухонные аксессуары
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.red-text.flow-text(href="#") Электрика интерьера
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.red-text.flow-text(href="#") Прямые, изогнутые трубы, аксессуары
+                                                                
+                                            .col.l4.s12
+                                                .card
+                                                    .card-content
+                                                        .card-title Пример товара
+                                                        p Some text
+                    .col.hover-action
+                        a.btn.indigo.darken-4.waves-effect.waves-orange.arrw Строительная фурнитура
+                        .drop-down
+                            .card#nav4
+                                .card-content.lighten-4
+                                    div
+                                        .row
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Дверная и оконная фурнитура
+                                                        ul.list.browser-default
+                                                            li
+                                                                a.link(href="#!") Some text
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Инструмент плотнический
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Прямые, изогнутые трубы, аксессуары
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Стеллажи - применение магазин, гардеробная, аптека
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Саморезы, винты, болты
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Крепеж - скобяной мир
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Мебель, предметы интерьера
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.indigo-text.flow-text(href="#") Направляющие ящиков и шкафов
+                                                                
+                                            .col.l4.s12
+                                                .card
+                                                    .card-content
+                                                        .card-title Пример товара
+                                                        p Some text
+                    .col.hover-action
+                        a.btn.green.darken-3.waves-effect.waves-orange.arrw Сантех аксессуары
+                        .drop-down
+                            .card#nav5
+                                .card-content.lighten-4
+                                    div
+                                        .row
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.green-text.flow-text(href="#") Мебельная фурнитура
+                                                        ul.list.browser-default
+                                                            li
+                                                                a.link(href="#!") Some text
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.green-text.flow-text(href="#") Системы открывания мебельных фасадов   
+                                            .col.l4.s12
+                                                .card
+                                                    .card-content
+                                                        .card-title Пример товара
+                                                        p Some text
+                    .col.hover-action
+                        a.btn.orange.darken-3.waves-effect.waves-orange.arrw Инструменты и крепеж
+                        .drop-down
+                            .card#nav6
+                                .card-content.lighten-4
+                                    div
+                                        .row
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.orange-text.flow-text(href="#") Инструмент плотнический
+                                                        ul.list.browser-default
+                                                            li
+                                                                a.link(href="#!") Some text
+                                            .col.l4.s12
+                                                ul.list
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.orange-text.flow-text(href="#") Саморезы, винты, болты
+                                                    li
+                                                        h5
+                                                            strong
+                                                                a.link.orange-text.flow-text(href="#") Крепеж - скобяной мир   
+                                            .col.l4.s12
+                                                .card
+                                                    .card-content
+                                                        .card-title Пример товара
+                                                        p Some text
+                    //- ul.tabs.transparent
                         li.tab.white.waves-effect.waves-orange
                             a.link(href="#nav1") Все товары
                         li.tab.purple.waves-effect.waves-light
                             a.link.white-text(href="#nav2") Все для мебели
+                                i.material-icons.left arrow_drop_down
                         li.tab.red.darken-1.waves-effect.waves-light
                             a.link.white-text(href="#nav3") Все для окон и дверей
                         li.tab.indigo.darken-1.waves-effect.waves-light
@@ -104,7 +336,7 @@ header.header
                             a.link.white-text(href="#nav5") Сантехнические аксессуары
                         li.tab.orange.darken-3.waves-effect.waves-light
                             a.link.white-text(href="#nav6") Инструменты и крепеж
-            .row
+            //- .row
                     .card#nav2
                         .card-content.lighten-4
                             //- div#nav1
@@ -293,16 +525,4 @@ header.header
                                             .card-content
                                                 .card-title Пример товара
                                                 p Some text
-    .modal#search1
-        .modal-content
-            h4 Поиск по сайту
-            form
-                .input-field
-                    input(id="search" type="search" name="search" required)
-                    label.label-icon(for="search")
-                        i.material-icons search
-                        //- | Поиск по сайту
-                    i.modal-action.modal-close.material-icons close
-        //- .modal-footer
-            a.modal-action.modal-close.waves-effect.waves-green.btn-flat(href="#!")
-                i.material-icons close
+    

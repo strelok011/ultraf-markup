@@ -129,3 +129,115 @@ body {
         }
     }
 }
+.row {
+    &.m-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    &.m-relative {
+        position: relative;
+    }
+}
+.drop-down {
+    position: absolute;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    top:100%;
+    left:11px;
+    width: calc(100% - 22px);
+    transition: opacity .3s ease-in-out,top .3s ease-in-out,visibility .3s ease-in-out;
+}
+.hover-action{
+    &:hover {
+        .drop-down {
+            opacity: 1;
+            visibility: visible;
+            top:calc(80% + 1px);
+        }
+        .btn {
+            &.arrw:after {
+                opacity: 1;
+                visibility: visible;
+                top: 92%;
+            }
+        }
+    }
+    .btn {
+        text-transform: none;
+        font-size: 1em;
+        position: relative;
+        overflow: visible;
+        &.arrw:after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 1px;
+            border: solid 6px transparent;
+            border-bottom-color: white;
+            position: absolute;
+            top: 125%;
+            z-index: 100;
+            left: 50%;
+            margin-left: -6px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .3s ease-in-out,top .3s ease-in-out,visibility .3s ease-in-out;
+        }
+    }
+}
+.logo {
+    padding: 10px 0 0 0;
+    text-align: center;
+    transition: transform .2s;
+}
+.card {
+    &.scaled {
+        transition: height;
+    }
+}
+.header .nav-extended {
+    .container>.row{
+        &:first-child {
+            margin-bottom: 0px;
+            transition: margin-bottom .3s;
+        }
+    }
+    .nav-content {
+        background: #1e5799; /* Old browsers */
+        background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 55%, #207cca 56%, #7db9e8 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 55%,#207cca 56%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #1e5799 0%,#2989d8 55%,#207cca 56%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    }
+}
+.is-fixed {
+    padding-top: 203px;
+    .header {
+        position: fixed;
+        top:0;
+        z-index: 100;
+        width:100%;
+        .container.nav-wrapper {
+            display: none;
+        }
+    }
+    .logo {
+        transform: scale(0.5) translateY(-48px);;
+    }
+    .card {
+        &.scaled {
+            height: 60px;
+        }
+    }
+    .col {
+        &.hover-action {
+            margin-top: -5px;
+        }
+    }
+    .header .nav-extended .container>.row{
+        &:first-child {
+            margin-bottom: -15px;
+        }
+    }
+}
