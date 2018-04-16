@@ -1,9 +1,8 @@
-.section
+.section.hide-on-med-and-down
     .row
         .carousel.carousel-slider(data-indicators="true")
             .carousel-fixed-item.center
                 a.btn.waves-effect.white.grey-text.darken-text-2.hoverable О компании
-
             .carousel-item.red.qual.white-text(href="#one")
                 .container
                     h2 Качество - наш девиз
@@ -13,30 +12,59 @@
                 .container
                     h2 Ценности и принципы компании 
                     p.white-text.flow-text
-                        |Во главу угла всей нашей деятельности поставлен клиент.
-                        br
-                        |Мы действуем в интересах наших клиентов и всегда стремимся предоставить наилучшее качество. Мы гарантируем эффективность и выгоду для клиента во всем, что мы делаем. Мы постоянно и повсеместно работаем над поисками идеальных точек соприкосновения. 
+                        |Мы действуем в интересах наших клиентов и всегда стремимся предоставить наилучшее качество. Гарантируем эффективность и выгоду для клиента. 
+                        br 
+                        |Постоянно работаем над поисками идеальных точек соприкосновения. 
 
             .carousel-item.green.trnsp.white-text(href="#three")
                 .container
                     h2 Опт и розница - любые объемы
                     p.white-text.flow-text
-                        |Мы придерживаемся принципов уважительного общения и взаимного доверия. Важную роль для нас играют честность, надежность, порядочность и профессионализм. Решения открыто обсуждаются сотрудниками, принимаются и воплощаются сообща. Мы уважаем каждого и открыты для новых идей. 
+                        |Мы придерживаемся принципов уважительного общения и взаимного доверия. Важную роль для нас играют честность, надежность, порядочность и профессионализм. 
+                        br 
+                        |Решения открыто обсуждаются сотрудниками, принимаются и воплощаются сообща. 
+                        br
+                        |Уважаем каждого и открыты для новых идей. 
             .carousel-item.blue.wrk.white-text(href="#four")                
                 .container
                     h2 Ответственный подход 
                     p.white-text.flow-text
-                        |Мы самостоятельно и своевременно выполняем поставленные задачи. Мы несем ответственность за свою работу, свои решения и их последствия. Мы не закрываем глаза на проблемы, а самостоятельно ищем пути их решения.
+                        |Cамостоятельно и своевременно выполняем поставленные задачи. Несем ответственность за свою работу, свои решения и их последствия. Не закрываем глаза на проблемы, а самостоятельно ищем пути их решения.
 
 .section
     .container
         .row
             .col.l4.s12
                 span.title Новости
+                a(href="#!").right Все новости
                 .card.hoverable
+                    .card-image
+                        img(src="http://fakeimg.pl/285x100/").waves-effect.waves-block.waves-light
+                        //- span.card-title Запущен новый дизайн сайта
                     .card-content
-                        .card-title Новости
+                        span.card-title.activator.grey-text.text-darken-4 Обновление дизайна
+                            i.material-icons.right more_vert
                     .card-action
+                            a(href="#!") Перейти к новости 
+                    .card-reveal
+                        span.card-title.grey-text.text-darken-4 Обновлен дизайн сайта
+                            i.material-icons.right close
+                        p Обновлен дизайн сайта, появились новые разделы!
+                .card.hoverable
+                    .card-image
+                        img(src="http://fakeimg.pl/285x100/").waves-effect.waves-block.waves-light
+                        //- span.card-title Запущен новый дизайн сайта
+                    .card-content
+                        span.card-title.activator.grey-text.text-darken-4 Обновление каталога
+                            i.material-icons.right more_vert
+                    .card-action
+                            a(href="#!") Перейти к новости 
+                    .card-reveal
+                        span.card-title.grey-text.text-darken-4 Обновление каталога
+                            i.material-icons.right close
+                        p Добавлены новые товары в раздел&nbsp;
+                            a(href="#1") Дверные петли
+                    //- .card-action
                         ul
                             li
                                 .row
@@ -45,7 +73,7 @@
                                 .row
                                     .col.s12
                                         | 10.02.2018: &nbsp
-                                        strong Запущен новый дизайн сайта
+                                        
                                 .row
                                     .col.s6.offset-s6
                                         a.link.right(href="#!") Подробнее
@@ -73,17 +101,22 @@
                                         a.link.right(href="#!") Подробнее
             .col.l4.s12
                 span.title Акции и распродажи
-                //- .card.hoverable
-                .card-image.waves-effect.waves-block.waves-light.hoverable
-                    a(href="#")
-                        img(src="http://fakeimg.pl/340x100/", alt="img")
+                a(href="#!").right Все акции
+                .card.hoverable
+                    .card-image.waves-effect.waves-block.waves-light
+                        a(href="#!")
+                            img(src="http://fakeimg.pl/285x100/", alt="img")
                         .card-title.home Акция
-                        //- p В связи с запуском новых моделей мебельных ручек - большая скидка на остатки на складе
+                    .card-content
+                        p В связи с запуском новых моделей мебельных ручек - большая скидка на остатки на складе
                     .card-action
                         a.link(href="#!") Подробнее
                 .card.hoverable
-                    .card-content
+                    .card-image.waves-effect.waves-block.waves-light
+                        a(href="#!")
+                            img(src="http://fakeimg.pl/285x100/", alt="img")
                         .card-title Новинка
+                    .card-content
                         p Новый вид магнитов для мебели!
                     .card-action
                         a.link(href="#!") Подробнее
@@ -94,12 +127,20 @@
                     .card-action
                         a.link(href="#!") Подробнее
             .col.l4.s12
+                span.title Популярные товары
+                a(href="#!").right Каталог
                 .card.hoverable
+                    .card-image.waves-effect.waves-block.waves-light
+                        a(href="#!")
+                            img(src="http://fakeimg.pl/285x100/", alt="img")
                     .card-content
-                        .card-title Популярные товары
+                        .card-title Популярный товар
                         p текст
-                    .card-action
                         a.link(href="#!") Перейти к товару
+                    .card-action.red.darken-4.white-text
+                        p Цена 25 8888,22 р
+                            a.link(href="#!").right Купить
+
 
 .parallax-container
     .parallax

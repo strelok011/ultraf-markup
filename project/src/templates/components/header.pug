@@ -1,82 +1,26 @@
 header.header
     .nav-extended.transparent(role="navigation")
         .container.nav-wrapper
-            .row.valign-wrapper
-                .col
-                    h6.valign-wrapper.light-blue-text
-                        | РЕЖИМ РАБОТЫ: Будни: 9-00 - 18-00, суббота: 11-00 - 18-00, выходной: воскресенье
-                .col
+            .row
+                .col.s12.m4.l6.blue-text.darken-4-text
+                    h6.valign-wrapper
+                        | РЕЖИМ РАБОТЫ: Будни: 9-00 - 18-00, суббота: 11-00 - 18-00, 
+                        br
+                        | выходной: воскресенье
+                .col.s12.m4.l3
                     h6.valign-wrapper
                         i.small.material-icons.left.light-blue-text contact_mail
                         a.link(href="mailto:office@ultra-f.ru") office@ultra-f.ru            
-                .col
+                .col.s12.m4.l3
                     h6.valign-wrapper
                         i.small.material-icons.left.light-blue-text contact_phone
                         a.link(href="tel:+74957902303")
                             strong +7 (495) 790-23-03
-                .col
+                .col.s12.m4.l3
                     h6.valign-wrapper
                         i.small.material-icons.left.light-blue-text contact_phone
                         a.link(href="tel:+78003011211") 
                             strong +7 (800) 301-12-11
-                                
-
-
-
-                //- .col.l2.s12
-                //-     .logo
-                //-         a.link(href="/")
-                //-             include ../../svg/ultra-logo.svg
-                                
-                    
-                    
-                //- .col.l10.s12
-                    .row
-                        .col.l6.s12
-                            //- form
-                            //-     .input-field
-                            //-         input(id="search" type="search" name="search" required)
-                            //-         label.label-icon(for="search")
-                            //-             i.material-icons search
-                            //-             //- | Поиск по сайту
-                            //-         i.material-icons close
-                        .col.l3.s12
-                            ul.list
-                                li
-                                    h6.valign-wrapper
-                                        i.small.material-icons.left.light-blue-text contact_mail
-                                        a.link(href="mailto:office@ultra-f.ru") office@ultra-f.ru
-                        
-                            
-                        .col.l3.s12
-                            ul.list
-                                li
-                                    h6.valign-wrapper
-                                        i.small.material-icons.left.light-blue-text contact_phone
-                                        a.link(href="tel:+74957902303")
-                                            strong +7 (495) 790-23-03
-                                li
-                                    small
-                                        a.link(href="tel:+78003011211") +7 (800) 301-12-11
-                    //- .row
-                    //-     .col.l6.s12
-                        //- .col.l3.s12
-                        //-     ul.list
-                        //-         li
-                        //-             h6.valign-wrapper
-                        //-                 i.small.material-icons.left.light-blue-text shopping_cart
-                        //-                 a.link(href="mailto:office@ultra-f.ru") 
-                        //-                     strong оформить заказ
-                        
-                            
-                        //- .col.l3.s12
-                        //-     ul.list
-                        //-         li
-                        //-             h6.valign-wrapper
-                        //-                 a.waves-effect.waves-light.btn-floating.white-text.red.darken-3.pulse.hoverable.left(href="#!")
-                        //-                     i.material-icons.left.white-text local_phone
-                        //-                 |&nbsp; 
-                        //-                 strong &nbsp; заказать звонок
         nav.nav-content.nav-extended.light-blue.darken-4
             .container
                 .row.valign-wrapper
@@ -117,7 +61,7 @@ header.header
 
                                 a.waves-effect.waves-light.btn-floating.white-text.transparent.hoverable.modal-trigger(href="#search1")
                                     i.tiny.material-icons search
-                .row.m-flex.m-relative
+                .row.m-flex.m-relative.dropnav
                     .col.hover-action
                         a.btn.btn-small.white.waves-effect.waves-orange.blue-text Каталог
                     .col.hover-action
@@ -133,9 +77,6 @@ header.header
                                                         h5
                                                             strong
                                                                 a.link.purple-text.flow-text(href="#") Мебельная фурнитура
-                                                        ul.list.browser-default
-                                                            li
-                                                                a.link(href="#!") Some text
                                                     li
                                                         h5
                                                             strong
@@ -165,13 +106,19 @@ header.header
                                                     li
                                                         h5
                                                             strong
-                                                                a.link.purple-text.flow-text(href="#") Электрика интерьера
+                                                                a.link.purple-text.flow-text(href="#") Электрика мебельная
                                                                 
                                             .col.l4.s12
-                                                .card
+                                                .card.hoverable
+                                                    .card-image.waves-effect.waves-block.waves-light
+                                                        a(href="#!")
+                                                            img(src="http://fakeimg.pl/285x100/", alt="img")
                                                     .card-content
-                                                        .card-title Пример товара
-                                                        p Some text
+                                                        .card-title.black-text Популярный товар
+                                                        a.link(href="#!") Перейти к товару
+                                                    .card-action.red.darken-4.white-text
+                                                        p Цена 25 8888,22 р
+                                                            a.link(href="#!").right Купить
                     .col.hover-action
                         a.btn.red.darken-1.waves-effect.waves-orange.arrw Для окон и дверей
                         .drop-down
@@ -184,34 +131,25 @@ header.header
                                                     li
                                                         h5
                                                             strong
-                                                                a.link.red-text.flow-text(href="#") Сантехузел - аксессуары для ванной комнаты
-                                                        ul.list.browser-default
-                                                            li
-                                                                a.link(href="#!") Some text
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.red-text.flow-text(href="#") Приспособления и крепеж для стекла
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.red-text.flow-text(href="#") Кухонные аксессуары
+                                                                a.link.red-text.flow-text(href="#") Дверная и оконная фурнитура
                                             .col.l4.s12
                                                 ul.list
                                                     li
                                                         h5
                                                             strong
-                                                                a.link.red-text.flow-text(href="#") Электрика интерьера
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.red-text.flow-text(href="#") Прямые, изогнутые трубы, аксессуары
-                                                                
+                                                                a.link.red-text.flow-text(href="#") Все виды петель
                                             .col.l4.s12
-                                                .card
+                                                .card.hoverable
+                                                    .card-image.waves-effect.waves-block.waves-light
+                                                        a(href="#!")
+                                                            img(src="http://fakeimg.pl/285x100/", alt="img")
                                                     .card-content
-                                                        .card-title Пример товара
-                                                        p Some text
+                                                        .card-title Популярный товар
+                                                        p текст
+                                                        a.link(href="#!") Перейти к товару
+                                                    .card-action.red.darken-4.white-text
+                                                        p Цена 25 8888,22 р
+                                                            a.link(href="#!").right Купить
                     .col.hover-action
                         a.btn.indigo.darken-4.waves-effect.waves-orange.arrw Строительная фурнитура
                         .drop-down
@@ -224,13 +162,6 @@ header.header
                                                     li
                                                         h5
                                                             strong
-                                                                a.link.indigo-text.flow-text(href="#") Дверная и оконная фурнитура
-                                                        ul.list.browser-default
-                                                            li
-                                                                a.link(href="#!") Some text
-                                                    li
-                                                        h5
-                                                            strong
                                                                 a.link.indigo-text.flow-text(href="#") Инструмент плотнический
                                                     li
                                                         h5
@@ -239,7 +170,7 @@ header.header
                                                     li
                                                         h5
                                                             strong
-                                                                a.link.indigo-text.flow-text(href="#") Стеллажи - применение магазин, гардеробная, аптека
+                                                                a.link.indigo-text.flow-text(href="#") Стеллажи - для магазина, гардеробной, аптеки
                                             .col.l4.s12
                                                 ul.list
                                                     li
@@ -250,22 +181,20 @@ header.header
                                                         h5
                                                             strong
                                                                 a.link.indigo-text.flow-text(href="#") Крепеж - скобяной мир
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.indigo-text.flow-text(href="#") Мебель, предметы интерьера
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.indigo-text.flow-text(href="#") Направляющие ящиков и шкафов
-                                                                
                                             .col.l4.s12
-                                                .card
+                                                .card.hoverable
+                                                    .card-image.waves-effect.waves-block.waves-light
+                                                        a(href="#!")
+                                                            img(src="http://fakeimg.pl/285x100/", alt="img")
                                                     .card-content
-                                                        .card-title Пример товара
-                                                        p Some text
+                                                        .card-title Популярный товар
+                                                        p текст
+                                                        a.link(href="#!") Перейти к товару
+                                                    .card-action.red.darken-4.white-text
+                                                        p Цена 25 8888,22 р
+                                                            a.link(href="#!").right Купить
                     .col.hover-action
-                        a.btn.green.darken-3.waves-effect.waves-orange.arrw Сантех аксессуары
+                        a.btn.green.darken-3.waves-effect.waves-orange.arrw Сантехнические аксессуары
                         .drop-down
                             .card#nav5
                                 .card-content.lighten-4
@@ -276,253 +205,22 @@ header.header
                                                     li
                                                         h5
                                                             strong
-                                                                a.link.green-text.flow-text(href="#") Мебельная фурнитура
-                                                        ul.list.browser-default
-                                                            li
-                                                                a.link(href="#!") Some text
+                                                                a.link.green-text.flow-text(href="#") Приспособления и крепеж для стекла
                                             .col.l4.s12
                                                 ul.list
                                                     li
                                                         h5
                                                             strong
-                                                                a.link.green-text.flow-text(href="#") Системы открывания мебельных фасадов   
+                                                                a.link.green-text.flow-text(href="#") Сантехузел - аксессуары для ванной комнаты   
                                             .col.l4.s12
-                                                .card
+                                                .card.hoverable
+                                                    .card-image.waves-effect.waves-block.waves-light
+                                                        a(href="#!")
+                                                            img(src="http://fakeimg.pl/285x100/", alt="img")
                                                     .card-content
-                                                        .card-title Пример товара
-                                                        p Some text
-                    .col.hover-action
-                        a.btn.orange.darken-3.waves-effect.waves-orange.arrw Инструменты и крепеж
-                        .drop-down
-                            .card#nav6
-                                .card-content.lighten-4
-                                    div
-                                        .row
-                                            .col.l4.s12
-                                                ul.list
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.orange-text.flow-text(href="#") Инструмент плотнический
-                                                        ul.list.browser-default
-                                                            li
-                                                                a.link(href="#!") Some text
-                                            .col.l4.s12
-                                                ul.list
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.orange-text.flow-text(href="#") Саморезы, винты, болты
-                                                    li
-                                                        h5
-                                                            strong
-                                                                a.link.orange-text.flow-text(href="#") Крепеж - скобяной мир   
-                                            .col.l4.s12
-                                                .card
-                                                    .card-content
-                                                        .card-title Пример товара
-                                                        p Some text
-                    //- ul.tabs.transparent
-                        li.tab.white.waves-effect.waves-orange
-                            a.link(href="#nav1") Все товары
-                        li.tab.purple.waves-effect.waves-light
-                            a.link.white-text(href="#nav2") Все для мебели
-                                i.material-icons.left arrow_drop_down
-                        li.tab.red.darken-1.waves-effect.waves-light
-                            a.link.white-text(href="#nav3") Все для окон и дверей
-                        li.tab.indigo.darken-1.waves-effect.waves-light
-                            a.link.white-text(href="#nav4") Строительная фурнитура
-                        li.tab.green.darken-3.waves-effect.waves-light
-                            a.link.white-text(href="#nav5") Сантехнические аксессуары
-                        li.tab.orange.darken-3.waves-effect.waves-light
-                            a.link.white-text(href="#nav6") Инструменты и крепеж
-            //- .row
-                    .card#nav2
-                        .card-content.lighten-4
-                            //- div#nav1
-                            div
-                                .row
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Мебельная фурнитура
-                                                ul.list.browser-default
-                                                    li
-                                                        a.link(href="#!") Some text
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Все виды петель
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Мебельные ручки фасадов
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Направляющие ящиков и шкафов
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Системы открывания мебельных фасадов
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Кухонные аксессуары
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Мебель, предметы интерьера
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.purple-text.flow-text(href="#") Электрика интерьера
-                                                        
-                                    .col.l4.s12
-                                        .card
-                                            .card-content
-                                                .card-title Пример товара
-                                                p Some text
-                    .card#nav3
-                        .card-content.lighten-4
-                            div
-                                .row
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.red-text.flow-text(href="#") Сантехузел - аксессуары для ванной комнаты
-                                                ul.list.browser-default
-                                                    li
-                                                        a.link(href="#!") Some text
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.red-text.flow-text(href="#") Приспособления и крепеж для стекла
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.red-text.flow-text(href="#") Кухонные аксессуары
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.red-text.flow-text(href="#") Электрика интерьера
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.red-text.flow-text(href="#") Прямые, изогнутые трубы, аксессуары
-                                                        
-                                    .col.l4.s12
-                                        .card
-                                            .card-content
-                                                .card-title Пример товара
-                                                p Some text
-                    .card#nav4
-                        .card-content.lighten-4
-                            div
-                                .row
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Дверная и оконная фурнитура
-                                                ul.list.browser-default
-                                                    li
-                                                        a.link(href="#!") Some text
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Инструмент плотнический
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Прямые, изогнутые трубы, аксессуары
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Стеллажи - применение магазин, гардеробная, аптека
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Саморезы, винты, болты
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Крепеж - скобяной мир
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Мебель, предметы интерьера
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.indigo-text.flow-text(href="#") Направляющие ящиков и шкафов
-                                                        
-                                    .col.l4.s12
-                                        .card
-                                            .card-content
-                                                .card-title Пример товара
-                                                p Some text
-                    .card#nav5
-                        .card-content.lighten-4
-                            div
-                                .row
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.green-text.flow-text(href="#") Мебельная фурнитура
-                                                ul.list.browser-default
-                                                    li
-                                                        a.link(href="#!") Some text
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.green-text.flow-text(href="#") Системы открывания мебельных фасадов   
-                                    .col.l4.s12
-                                        .card
-                                            .card-content
-                                                .card-title Пример товара
-                                                p Some text
-                    .card#nav6
-                        .card-content.lighten-4
-                            div
-                                .row
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.orange-text.flow-text(href="#") Инструмент плотнический
-                                                ul.list.browser-default
-                                                    li
-                                                        a.link(href="#!") Some text
-                                    .col.l4.s12
-                                        ul.list
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.orange-text.flow-text(href="#") Саморезы, винты, болты
-                                            li
-                                                h5
-                                                    strong
-                                                        a.link.orange-text.flow-text(href="#") Крепеж - скобяной мир   
-                                    .col.l4.s12
-                                        .card
-                                            .card-content
-                                                .card-title Пример товара
-                                                p Some text
-    
+                                                        .card-title Популярный товар
+                                                        p текст
+                                                        a.link(href="#!") Перейти к товару
+                                                    .card-action.red.darken-4.white-text
+                                                        p Цена 25 8888,22 р
+                                                            a.link(href="#!").right Купить

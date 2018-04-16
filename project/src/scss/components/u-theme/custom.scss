@@ -76,7 +76,8 @@ body {
             padding:50px 50px 100px;
             border-radius: 3px;
             p {
-                font-size: 22px;
+                // font-size: 22px;
+                font-size: 1.5vw;
             }
         }
         &.red.qual:before {
@@ -165,9 +166,10 @@ body {
     }
     .btn {
         text-transform: none;
-        font-size: 1em;
         position: relative;
         overflow: visible;
+        font-size: 0.9vw;
+        white-space: nowrap;
         &.arrw:after {
             content: "";
             display: inline-block;
@@ -190,10 +192,12 @@ body {
     padding: 10px 0 0 0;
     text-align: center;
     transition: transform .2s;
+    line-height: 50px;
 }
 .card {
     &.scaled {
         transition: height;
+        max-width: 200px;
     }
 }
 .header .nav-extended {
@@ -201,6 +205,9 @@ body {
         &:first-child {
             margin-bottom: 0px;
             transition: margin-bottom .3s;
+            h6 {
+                font-size: 0.95em;
+            }
         }
     }
     .nav-content {
@@ -240,4 +247,11 @@ body {
             margin-bottom: -15px;
         }
     }
+}
+nav .drop-down ul a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+svg:not(:root) {
+    max-width: 100%;
 }
