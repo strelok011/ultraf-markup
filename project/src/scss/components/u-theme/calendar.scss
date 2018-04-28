@@ -1,0 +1,168 @@
+.container {
+    #Calendar .calendar {
+        background: #FFFFFF;
+        // font: normal 12px Tahoma;
+        font: normal 18px Roboto;
+        font-weight: 100;
+        width: 240px;
+        margin: auto;
+        margin-left: 0;
+        border-spacing: 4 !important;
+        border: none;
+        border-radius: 0px !important;
+        box-shadow: 0 0 5px #ccc;
+    }
+    #Calendar td, #Calendar th {
+        padding:2px;
+    }
+    #Calendar .date {
+        // border: 1px solid #AAA; 
+        border: none;
+        padding: 3px; 
+        width: 28px; 
+        height: 28px;
+        border-radius: 0px;
+        text-shadow: 0px 1px 1px #FFFFFF;
+        filter: dropshadow(color=#FFFFFF, offx=0, offy=1); 
+    }
+    #Calendar .date:hover {
+        // border: 1px solid #555555;
+    }
+    #Calendar .noevent .date:hover {
+        background: #d4d3d3; /* Old browsers */
+        color:black;
+    }
+    #Calendar .head {
+        background: #efefef; /* Old browsers */
+        background: -moz-linear-gradient(top,  #efefef 0%, #dedede 50%, #cecece 51%, #ededed 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(50%,#dedede), color-stop(51%,#cecece), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* IE10+ */
+        background: linear-gradient(top,  #efefef 0%,#dedede 50%,#cecece 51%,#ededed 100%); /* W3C */
+        border: 1px solid #999999;
+    }
+    #Calendar .month {
+        height: 30px; 
+        font-size: 1.2em;
+    }
+    #Calendar .month,
+    #Calendar .dow {
+        text-align: center; 
+        font-weight: bold;
+    }
+    #Calendar .dow {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+    #Calendar .workday,
+    #Calendar .weekend {
+        text-align: right;
+    }
+
+    #Calendar .weekend {
+        color: #990000;
+        font-weight: 400;
+    }
+    #Calendar .emptyday {}
+    #Calendar .today .date {
+        background: #e4f5fc; /* Old browsers */
+        background: -moz-linear-gradient(top,  #e4f5fc 0%, #bfe8f9 50%, #9fd8ef 51%, #2ab0ed 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e4f5fc), color-stop(50%,#bfe8f9), color-stop(51%,#9fd8ef), color-stop(100%,#2ab0ed)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* IE10+ */
+        background: linear-gradient(top,  #e4f5fc 0%,#bfe8f9 50%,#9fd8ef 51%,#2ab0ed 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); /* IE6-8 */
+        border: 1px solid #09C;
+    }
+    #Calendar .month,
+    #Calendar .prev,
+    #Calendar .next {
+        font-weight: bold;
+        cursor: pointer; 
+        text-shadow: 0px 1px 1px #FFFFFF;
+        filter: dropshadow(color=#FFFFFF, offx=0, offy=1);
+    }
+
+    #Calendar .month {
+        border: none !important;
+    }
+    #Calendar .prev {
+        float: left;
+        padding: 5px;
+    }
+    #Calendar .next {
+        float: right;
+        padding: 5px;
+    }
+
+    #Calendar .prev a, .next a {
+        padding: 3px 6px;
+        text-decoration: none;
+    }
+    #Calendar .prev a:hover, .next a:hover {
+        text-decoration: none;
+        border-radius: 2px;
+        border: 1px solid #AAA;
+        padding: 2px 5px;
+    }
+
+    #Calendar .noevent .date {	
+        background: #f1f1f1; /* Old browsers */
+        margin: 0 auto;
+    }
+    #Calendar .isevent .date {
+        color: #060 !important; 
+        font-weight: 400;
+        cursor: pointer; 
+        background: #e6f0a3; /* Old browsers */
+    }
+    #Calendar .event {
+        text-align: left;
+        position:absolute;
+        z-index: 10;
+        display: none;
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+        background: linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-8 */
+        border: 1px solid rgba(120, 120, 120, 0.3);
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        padding: 10px;
+        min-height: 50px;
+        min-width: 200px;
+        max-height: 150px;      
+        max-width: 300px;
+        margin: -10px 0 0 10px;
+        overflow: auto;
+        font-size: 14px;
+        box-shadow: 0 0 8px #ccc;
+    }
+    #Calendar .event div {
+        text-align: left;
+        font-weight: normal;
+    }
+    #Calendar .event div .num {
+        font-weight: bold;
+        color: #333;
+    }
+    #Calendar .event div .eventdate {
+        color: #333; 
+    }
+
+    #Calendar .cover {
+        opacity: 0.1;
+        position: relative;
+        background: #fff;
+        display: none;
+        margin: auto;
+        outline: 1px solid green;
+    }
+}
