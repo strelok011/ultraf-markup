@@ -193,3 +193,6 @@ $(window).on('scroll', function() {
       $('body').addClass('is-fixed');
   }
 });
+$(document).ready(function(){
+  $('select').material_select();
+});
