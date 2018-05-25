@@ -1,22 +1,27 @@
 header.header
     .nav-extended.transparent(role="navigation")
         .container.nav-wrapper
-            .row
-                .col.s12.m4.l6.blue-text.darken-4-text
+            .row.valign-wrapper
+                .col.blue-text.darken-4-text
                     h6.valign-wrapper
-                        | РЕЖИМ РАБОТЫ: Будни: 9-00 - 18-00, суббота: 11-00 - 18-00, 
-                        br
-                        | выходной: воскресенье
-                .col.s12.m4.l3
+                        strong
+                            | МЫ ОТКРЫТЫ: Будни: 
+                            span.green-text.darken-4-text 9<sup>00</sup> - 18<sup>00</sup>
+                            |, суббота: 
+                            span.green-text.darken-4-text 11<sup>00</sup> - 18<sup>00</sup>
+                            |, выходной: 
+                            span.red-text.darken-4-text воскресенье
+                .col
                     h6.valign-wrapper
                         i.small.material-icons.left.light-blue-text contact_mail
-                        a.link(href="mailto:office@ultra-f.ru") office@ultra-f.ru            
-                .col.s12.m4.l3
+                        strong
+                            a.link(href="mailto:office@ultra-f.ru") office@ultra-f.ru            
+                .col
                     h6.valign-wrapper
                         i.small.material-icons.left.light-blue-text contact_phone
                         a.link(href="tel:+74957902303")
                             strong +7 (495) 790-23-03
-                .col.s12.m4.l3
+                .col
                     h6.valign-wrapper
                         i.small.material-icons.left.light-blue-text contact_phone
                         a.link(href="tel:+78003011211") 

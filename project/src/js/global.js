@@ -185,6 +185,14 @@ function autoplay() {
 setTimeout(autoplay, 6000);
 $('.modal').modal();
 $('.dropdown-trigger').dropdown();
+$('.dropdown-trigger-cart').dropdown({
+  hover: true,
+  inDuration: 300,
+  outDuration: 225,
+  constrain_width: false,
+  belowOrigin: true,
+  alignment: 'right',
+});
 $(window).on('scroll', function() {
   if ($(document).scrollTop() < 44) {
       $('body').removeClass('is-fixed');
